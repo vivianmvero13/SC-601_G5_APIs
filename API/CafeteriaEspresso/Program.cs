@@ -19,6 +19,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 //Inclusion de controladores
 builder.Services.AddScoped<PaisService>();
 builder.Services.AddScoped<ProvinciaService>();
+builder.Services.AddScoped<CantonService>();
 builder.Services.AddScoped<FacturasService>();
 builder.Services.AddScoped<MetodoPagoService>();
 builder.Services.AddScoped<ReservasService>();
