@@ -10,6 +10,7 @@ namespace CafeteriaEspresso.Data
         {
 
         }
+        public DbSet<PaisModel> G5_Pais { get; set; }
         public DbSet<FacturasModel> G5_Facturas { get; set;}
         public DbSet<MetodoPagoModel> G5_Metodo_Pago { get; set; }
         public DbSet<ReservasModel> G5_Reservas { get; set; }
