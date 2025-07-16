@@ -20,6 +20,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<PaisService>();
 builder.Services.AddScoped<ProvinciaService>();
 builder.Services.AddScoped<CantonService>();
+builder.Services.AddScoped<DistritoService>();
 builder.Services.AddScoped<FacturasService>();
 builder.Services.AddScoped<MetodoPagoService>();
 builder.Services.AddScoped<ReservasService>();
