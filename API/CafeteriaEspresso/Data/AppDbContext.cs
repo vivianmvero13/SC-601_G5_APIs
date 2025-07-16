@@ -14,6 +14,7 @@ namespace CafeteriaEspresso.Data
         public DbSet<ProvinciaModel> G5_Provincia { get; set; }
         public DbSet<CantonModel> G5_Canton { get; set; }
         public DbSet<DistritoModel> G5_Distrito { get; set; }
+        public DbSet<DireccionModel> G5_Direccion { get; set; }
         public DbSet<FacturasModel> G5_Facturas { get; set;}
         public DbSet<MetodoPagoModel> G5_Metodo_Pago { get; set; }
         public DbSet<ReservasModel> G5_Reservas { get; set; }
