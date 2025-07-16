@@ -18,6 +18,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 //builder.Services.AddSingleton<FacturasService>();
 //Inclusion de controladores
 builder.Services.AddScoped<PaisService>();
+builder.Services.AddScoped<ProvinciaService>();
 builder.Services.AddScoped<FacturasService>();
 builder.Services.AddScoped<MetodoPagoService>();
 builder.Services.AddScoped<ReservasService>();
