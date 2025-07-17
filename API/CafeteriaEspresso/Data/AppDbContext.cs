@@ -20,6 +20,10 @@ namespace CafeteriaEspresso.Data
         public DbSet<ReservasModel> G5_Reservas { get; set; }
         public DbSet<PromocionesModel> G5_Promociones { get; set; }
         public DbSet<ResenasModel> G5_Resenias { get; set; }
-
+        public DbSet<ResenasModel> G5_Productos { get; set; }
+        public DbSet<ResenasModel> G5_Categoria_Productos { get; set; }
+        public DbSet<ResenasModel> G5_Inventario { get; set; }
+        public DbSet<ResenasModel> G5_Proveedores { get; set; }
+        public DbSet<ResenasModel> G5_Detalle_Factura { get; set; }
     }
 }
