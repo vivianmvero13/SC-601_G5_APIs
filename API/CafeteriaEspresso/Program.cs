@@ -33,6 +33,10 @@ builder.Services.AddScoped<InventarioService>();
 builder.Services.AddScoped<ProveedoresService>();
 builder.Services.AddScoped<DetalleFacturaService>();
 builder.Services.AddScoped<EstadosService>();
+builder.Services.AddScoped<UsuarioService>();
+builder.Services.AddScoped<ClienteService>();
+builder.Services.AddScoped<ColaboradoresService>();
+builder.Services.AddScoped<RolesService>();
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

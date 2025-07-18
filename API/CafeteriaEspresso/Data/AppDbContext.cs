@@ -26,5 +26,9 @@ namespace CafeteriaEspresso.Data
         public DbSet<ProveedoresModel> G5_Proveedores { get; set; }
         public DbSet<DetalleFacturaModel> G5_Detalle_Factura { get; set; }
         public DbSet<EstadosModel> G5_Estados { get; set; }
+        public DbSet<UsuarioModel> G5_Usuarios { get; set; }
+        public DbSet<ClienteModel> G5_Clientes { get; set; }
+        public DbSet<ColaboradoresModel> G5_Colaboradores { get; set; }
+        public DbSet<RolesModel> G5_Roles { get; set; }
     }
 }
