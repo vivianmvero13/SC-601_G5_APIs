@@ -46,9 +46,13 @@ namespace CafeteriaEspresso.Services
                 return false;
             }
 
-            entidad.comentario = reservasModel.comentario;
-            entidad.calificacion = reservasModel.calificacion;
-            
+            entidad.fecha_reserva = reservasModel.fecha_reserva;
+            entidad.id_usuario = reservasModel.id_usuario;
+            entidad.id_estado = reservasModel.id_estado;
+            entidad.id_metodo_pago = reservasModel.id_metodo_pago;
+            entidad.nota_cliente = reservasModel.nota_cliente;
+
+
 
             _context.SaveChanges();
 
