@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace API_Proyecto.Models
+namespace CafeteriaEspresso.Models
 {
     public class ColaboradoresModel
     {
