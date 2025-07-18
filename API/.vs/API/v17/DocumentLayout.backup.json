@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\controllers\\detallefacturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\controllers\\detallefacturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\services\\proveedoresservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\services\\proveedoresservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\services\\direccionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\services\\direccionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\models\\proveedoresmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\models\\proveedoresmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\models\\promocionesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\models\\promocionesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\models\\direccionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\models\\direccionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\controllers\\direccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\controllers\\direccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\controllers\\categoriaproductoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\controllers\\categoriaproductoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\controllers\\detallefacturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\controllers\\detallefacturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|c:\\users\\cihc2\\documents\\universidad\\sc-601_programacion_avanzada\\proyecto\\sc-601_g5_apis\\api\\cafeteriaespresso\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C5F4A3-A290-4CD0-978B-3EA24140E731}|CafeteriaEspresso\\CafeteriaEspresso.csproj|solutionrelative:cafeteriaespresso\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +50,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 340,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Program.cs",
               "RelativeDocumentMoniker": "CafeteriaEspresso\\Program.cs",
               "ToolTip": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Program.cs",
               "RelativeToolTip": "CafeteriaEspresso\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwCEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T04:31:18.378Z",
               "IsPinned": true,
@@ -44,7 +68,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "CafeteriaEspresso\\Data\\AppDbContext.cs",
@@ -53,12 +77,89 @@
               "ViewState": "AgIAAAwAAAAAAAAAAAA5wB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-17T04:14:42.607Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProveedoresService.cs",
+              "DocumentMoniker": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Services\\ProveedoresService.cs",
+              "RelativeDocumentMoniker": "CafeteriaEspresso\\Services\\ProveedoresService.cs",
+              "ToolTip": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Services\\ProveedoresService.cs",
+              "RelativeToolTip": "CafeteriaEspresso\\Services\\ProveedoresService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAADwvzsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T03:44:15.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProveedoresModel.cs",
+              "DocumentMoniker": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Models\\ProveedoresModel.cs",
+              "RelativeDocumentMoniker": "CafeteriaEspresso\\Models\\ProveedoresModel.cs",
+              "ToolTip": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Models\\ProveedoresModel.cs",
+              "RelativeToolTip": "CafeteriaEspresso\\Models\\ProveedoresModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T03:47:12.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PromocionesModel.cs",
+              "DocumentMoniker": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Models\\PromocionesModel.cs",
+              "RelativeDocumentMoniker": "CafeteriaEspresso\\Models\\PromocionesModel.cs",
+              "ToolTip": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Models\\PromocionesModel.cs",
+              "RelativeToolTip": "CafeteriaEspresso\\Models\\PromocionesModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T03:46:29.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DireccionModel.cs",
+              "DocumentMoniker": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Models\\DireccionModel.cs",
+              "RelativeDocumentMoniker": "CafeteriaEspresso\\Models\\DireccionModel.cs",
+              "ToolTip": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Models\\DireccionModel.cs",
+              "RelativeToolTip": "CafeteriaEspresso\\Models\\DireccionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T03:45:59.92Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DireccionService.cs",
+              "DocumentMoniker": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Services\\DireccionService.cs",
+              "RelativeDocumentMoniker": "CafeteriaEspresso\\Services\\DireccionService.cs",
+              "ToolTip": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Services\\DireccionService.cs",
+              "RelativeToolTip": "CafeteriaEspresso\\Services\\DireccionService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T03:45:38.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DireccionController.cs",
+              "DocumentMoniker": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Controllers\\DireccionController.cs",
+              "RelativeDocumentMoniker": "CafeteriaEspresso\\Controllers\\DireccionController.cs",
+              "ToolTip": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Controllers\\DireccionController.cs",
+              "RelativeToolTip": "CafeteriaEspresso\\Controllers\\DireccionController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T03:45:24.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CategoriaProductosController.cs",
               "DocumentMoniker": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Controllers\\CategoriaProductosController.cs",
               "RelativeDocumentMoniker": "CafeteriaEspresso\\Controllers\\CategoriaProductosController.cs",
@@ -66,21 +167,19 @@
               "RelativeToolTip": "CafeteriaEspresso\\Controllers\\CategoriaProductosController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T05:27:23.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-17T05:27:23.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "DetalleFacturaController.cs",
               "DocumentMoniker": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Controllers\\DetalleFacturaController.cs",
               "RelativeDocumentMoniker": "CafeteriaEspresso\\Controllers\\DetalleFacturaController.cs",
               "ToolTip": "C:\\Users\\cihc2\\Documents\\Universidad\\SC-601_Programacion_Avanzada\\Proyecto\\SC-601_G5_APIs\\API\\CafeteriaEspresso\\Controllers\\DetalleFacturaController.cs",
               "RelativeToolTip": "CafeteriaEspresso\\Controllers\\DetalleFacturaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAqwCEAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-17T05:27:18.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-17T05:27:18.983Z"
             }
           ]
         }

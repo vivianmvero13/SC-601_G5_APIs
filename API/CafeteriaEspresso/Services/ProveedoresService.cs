@@ -51,7 +51,7 @@ namespace CafeteriaEspresso.Services
             entidad.nombre = ProveedoresModel.nombre;
             entidad.telefono = ProveedoresModel.telefono;   
             entidad.correo = ProveedoresModel.correo;   
-            entidad.direccion = ProveedoresModel.direccion; 
+            entidad.id_direccion = ProveedoresModel.id_direccion; 
 
 
             _context.SaveChanges();
