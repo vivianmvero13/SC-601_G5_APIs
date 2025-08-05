@@ -78,4 +78,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.UseCors("PermirFrontend");
+
 app.Run();
