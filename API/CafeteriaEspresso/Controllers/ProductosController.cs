@@ -45,43 +45,36 @@ namespace CafeteriaEspresso.Controllers
 
         }
 
-        //APIS PUT
-        [HttpPut]
-        public IActionResult UpdateProductos(ProductosModel ProductosModel)
+        
+        [HttpPut("{id}")]
+        public IActionResult UpdateProductos(int id, [FromBody] ProductosModel ProductosModel)
         {
+            if (id != ProductosModel.id)
+            {
+                return BadRequest(new { mensaje = "El ID de la URL no coincide con el del cuerpo." });
+            }
 
             if (!_ProductosService.UpdateG5_Productos(ProductosModel))
             {
-                return NotFound(
-                        new
-                        {
-                            elmsneaje = "ERROR: El producto no existe."
-                        }
-                    );
+                return NotFound(new { mensaje = "ERROR: El producto no existe." });
             }
 
             return NoContent();
-
         }
 
-        //APIS DELETE
-        [HttpDelete]
+
+        
+        [HttpDelete("{id}")]
         public IActionResult DeleteProductosModel(int id)
         {
-
             if (!_ProductosService.DeleteG5_Productos(id))
             {
-                return NotFound(
-                        new
-                        {
-                            elmsneaje = "ERROR: El producto no existe."
-                        }
-                    );
+                return NotFound(new { mensaje = "ERROR: El producto no existe." });
             }
 
             return NoContent();
-
         }
+
 
     }
 }
