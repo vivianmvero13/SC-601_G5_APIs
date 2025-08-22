@@ -7,5 +7,6 @@
         public string descripcion { get; set; } 
         public decimal precio { get; set; }
         public int id_categoria { get; set; } // [fk, not null]
+        public string imagen { get; set; }
     }
 }

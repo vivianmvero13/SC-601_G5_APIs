@@ -1,5 +1,6 @@
 ﻿using CafeteriaEspresso.Data;
 using CafeteriaEspresso.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CafeteriaEspresso.Services
 {
@@ -13,12 +14,10 @@ namespace CafeteriaEspresso.Services
             _context = context;
         }
 
-        //Aca necesitamos el modelo de datos para el almacenamiento temporal
         private readonly List<ProductosModel> _productos = new List<ProductosModel>();
         private int _nextId = 1;
 
 
-        //funcion de obtener Productos
         public List<ProductosModel> GetProductosModel()
         {
             return _context.G5_Productos.ToList();
@@ -51,6 +50,7 @@ namespace CafeteriaEspresso.Services
             entidad.descripcion = ProductosModel.descripcion;
             entidad.precio = ProductosModel.precio;
             entidad.id_categoria = ProductosModel.id_categoria;
+            entidad.imagen = ProductosModel.imagen;
 
             _context.SaveChanges();
 
@@ -74,6 +74,26 @@ namespace CafeteriaEspresso.Services
 
         }
 
+        public List<ProductosModel> GetByCategoria(int id_cat)
+        {
+            return _context.G5_Productos.ToList();
+        }
+
+        public List<ProductosModel> Buscar(int? idCategoria, string? nombre)
+        {
+            var query = _context.G5_Productos.AsNoTracking().AsQueryable();
+
+            if (idCategoria.HasValue)
+                query = query.Where(p => p.id_categoria == idCategoria.Value);
+
+            if (!string.IsNullOrWhiteSpace(nombre))
+            {
+                nombre = nombre.Trim();
+                query = query.Where(p => EF.Functions.Like(p.nombre, $"%{nombre}%"));
+            }
+
+            return query.ToList();
+        }
 
     }
 }

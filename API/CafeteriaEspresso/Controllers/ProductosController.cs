@@ -6,75 +6,58 @@ namespace CafeteriaEspresso.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ProductosController : Controller
+    public class ProductosController : ControllerBase // ControllerBase para API pura
     {
-        private readonly ProductosService _ProductosService;
+        private readonly ProductosService _productosService;
 
-        public ProductosController(ProductosService ProductosService)
+        public ProductosController(ProductosService productosService)
         {
-            _ProductosService = ProductosService;
+            _productosService = productosService;
         }
 
-        //Apis GET, POST, PUT   y DELETE
+        // GET /Productos?categoriaId=3&q=capuccino   (si no mandas params, devuelve todos)
         [HttpGet]
-        public ActionResult<IEnumerable<ProductosModel>> GetProductosModel()
+        public ActionResult<IEnumerable<ProductosModel>> Get(
+            [FromQuery] int? categoriaId,
+            [FromQuery(Name = "q")] string? nombre)
         {
-            return _ProductosService.GetProductosModel();
+            if (categoriaId.HasValue || !string.IsNullOrWhiteSpace(nombre))
+                return Ok(_productosService.Buscar(categoriaId, nombre));
+
+            return Ok(_productosService.GetProductosModel());
         }
 
-        [HttpGet("{id}")]
+        // GET /Productos/5
+        [HttpGet("{id:int}")]
         public ActionResult<ProductosModel> GetById(int id)
         {
-            return _ProductosService.GetById(id);
+            var prod = _productosService.GetById(id);
+            return prod is null ? NotFound() : Ok(prod);
         }
 
-        //Apis POST
+        // POST /Productos
         [HttpPost]
-        public ActionResult<ProductosModel> AddG5_Productos(ProductosModel ProductosModel)
+        public ActionResult<ProductosModel> AddG5_Productos([FromBody] ProductosModel model)
         {
-
-            var newProductosModel = _ProductosService.AddG5_Productos(ProductosModel);
-
-            return
-                CreatedAtAction(
-                        nameof(GetProductosModel), new
-                        {
-                            id = newProductosModel.id,
-                        },
-                        newProductosModel);
-
+            var creado = _productosService.AddG5_Productos(model);
+            return CreatedAtAction(nameof(GetById), new { id = creado.id }, creado);
         }
 
-        
-        [HttpPut("{id}")]
-        public IActionResult UpdateProductos(int id, [FromBody] ProductosModel ProductosModel)
+        // PUT /Productos/5
+        [HttpPut("{id:int}")]
+        public IActionResult UpdateProductos(int id, [FromBody] ProductosModel model)
         {
-            if (id != ProductosModel.id)
-            {
+            if (id != model.id)
                 return BadRequest(new { mensaje = "El ID de la URL no coincide con el del cuerpo." });
-            }
 
-            if (!_ProductosService.UpdateG5_Productos(ProductosModel))
-            {
-                return NotFound(new { mensaje = "ERROR: El producto no existe." });
-            }
-
-            return NoContent();
+            return _productosService.UpdateG5_Productos(model) ? NoContent() : NotFound(new { mensaje = "ERROR: El producto no existe." });
         }
 
-
-        
-        [HttpDelete("{id}")]
+        // DELETE /Productos/5
+        [HttpDelete("{id:int}")]
         public IActionResult DeleteProductosModel(int id)
         {
-            if (!_ProductosService.DeleteG5_Productos(id))
-            {
-                return NotFound(new { mensaje = "ERROR: El producto no existe." });
-            }
-
-            return NoContent();
+            return _productosService.DeleteG5_Productos(id) ? NoContent() : NotFound(new { mensaje = "ERROR: El producto no existe." });
         }
-
-
     }
 }
