@@ -6,7 +6,7 @@ namespace CafeteriaEspresso.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ProductosController : ControllerBase // ControllerBase para API pura
+    public class ProductosController : ControllerBase 
     {
         private readonly ProductosService _productosService;
 
@@ -15,7 +15,6 @@ namespace CafeteriaEspresso.Controllers
             _productosService = productosService;
         }
 
-        // GET /Productos?categoriaId=3&q=capuccino   (si no mandas params, devuelve todos)
         [HttpGet]
         public ActionResult<IEnumerable<ProductosModel>> Get(
             [FromQuery] int? categoriaId,
@@ -27,7 +26,6 @@ namespace CafeteriaEspresso.Controllers
             return Ok(_productosService.GetProductosModel());
         }
 
-        // GET /Productos/5
         [HttpGet("{id:int}")]
         public ActionResult<ProductosModel> GetById(int id)
         {
@@ -35,7 +33,6 @@ namespace CafeteriaEspresso.Controllers
             return prod is null ? NotFound() : Ok(prod);
         }
 
-        // POST /Productos
         [HttpPost]
         public ActionResult<ProductosModel> AddG5_Productos([FromBody] ProductosModel model)
         {
@@ -43,17 +40,15 @@ namespace CafeteriaEspresso.Controllers
             return CreatedAtAction(nameof(GetById), new { id = creado.id }, creado);
         }
 
-        // PUT /Productos/5
         [HttpPut("{id:int}")]
         public IActionResult UpdateProductos(int id, [FromBody] ProductosModel model)
         {
             if (id != model.id)
-                return BadRequest(new { mensaje = "El ID de la URL no coincide con el del cuerpo." });
+                return BadRequest(new { mensaje = "Error en ID" });
 
             return _productosService.UpdateG5_Productos(model) ? NoContent() : NotFound(new { mensaje = "ERROR: El producto no existe." });
         }
 
-        // DELETE /Productos/5
         [HttpDelete("{id:int}")]
         public IActionResult DeleteProductosModel(int id)
         {

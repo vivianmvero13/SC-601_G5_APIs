@@ -1,7 +1,8 @@
-﻿using CafeteriaEspresso.Data;
-using CafeteriaEspresso.Models;
+﻿using CafeteriaEspresso.Models;
 using CafeteriaEspresso.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Globalization;
+
 
 namespace CafeteriaEspresso.Controllers
 {
@@ -85,5 +86,43 @@ namespace CafeteriaEspresso.Controllers
 
         }
 
+        [HttpGet("Historial/{id_Usuario:int}")]
+        public ActionResult<IEnumerable<FacturasModel>> GetHistorialPorUsuario(int id_Usuario)
+        {
+            return _facturasService.GetHistorialPorUsuario(id_Usuario);
+        }
+
+
+        [HttpGet("Historial")]
+        public ActionResult<IEnumerable<FacturasModel>> GetHistorialAdmin(
+        [FromQuery] string? desde,
+        [FromQuery] string? hasta,
+        [FromQuery] int? idUsuario,
+        [FromQuery] int? idFactura)
+        {
+            DateOnly? d = ParseDateOnly(desde);
+            DateOnly? h = ParseDateOnly(hasta);
+
+            var list = _facturasService.BuscarFacturas(idUsuario, idFactura, d, h);
+            return list;
+        }
+
+        private static DateOnly? ParseDateOnly(string? s)
+        {
+            if (string.IsNullOrWhiteSpace(s)) return null;
+
+            // el input de <input type="date"> viene como yyyy-MM-dd
+            if (DateOnly.TryParseExact(s, "yyyy-MM-dd", CultureInfo.InvariantCulture,
+                                       DateTimeStyles.None, out var date))
+                return date;
+
+            // fallback por si llega en otro formato válido
+            if (DateOnly.TryParse(s, CultureInfo.InvariantCulture, DateTimeStyles.None, out date))
+                return date;
+
+            return null; // si es inválida, la ignoramos
+        }
+
     }
 }
+

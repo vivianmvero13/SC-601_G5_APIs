@@ -1,6 +1,7 @@
 ﻿using CafeteriaEspresso.Data;
 using CafeteriaEspresso.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace CafeteriaEspresso.Services
 {
@@ -14,12 +15,10 @@ namespace CafeteriaEspresso.Services
             _context = context;
         }
 
-        //Aca necesitamos el modelo de datos para el almacenamiento temporal
         private readonly List<FacturasModel> _facturas = new List<FacturasModel>();
         private int _nextId = 1;
 
 
-        //funcion de obtener resenas
         public List<FacturasModel> GetFacturasModel()
         {
             return _context.G5_Facturas.ToList();
@@ -33,8 +32,6 @@ namespace CafeteriaEspresso.Services
 
         public FacturasModel AddG5_Facturas(FacturasModel facturasModel)
         {
-            // Se autogenra_nextId
-            //producto.Id = _nextId++;
             _context.G5_Facturas.Add(facturasModel);
             _context.SaveChanges();
             return facturasModel;
@@ -76,6 +73,37 @@ namespace CafeteriaEspresso.Services
 
         }
 
+        public List<FacturasModel> GetHistorialPorUsuario(int id_Usuario)
+        {
+            return _context.G5_Facturas
+                           .Where(f => f.id_Usuario == id_Usuario) 
+                           .OrderByDescending(f => f.fecha)
+                           .ToList();
+        }
+
+        public List<FacturasModel> BuscarFacturas(int? idUsuario, int? idFactura, DateOnly? desde, DateOnly? hasta)
+        {
+            var q = _context.G5_Facturas.AsQueryable();
+
+            if (idUsuario.HasValue)
+                q = q.Where(f => f.id_Usuario == idUsuario.Value);
+
+            if (idFactura.HasValue)
+                q = q.Where(f => f.id == idFactura.Value);
+
+            if (desde.HasValue)
+            {
+                q = q.Where(f => f.fecha >= desde);
+            }
+
+            if (hasta.HasValue)
+            {
+                
+                q = q.Where(f => f.fecha < hasta);
+            }
+
+            return q.OrderByDescending(f => f.fecha).ToList();
+        }
 
     }
 }

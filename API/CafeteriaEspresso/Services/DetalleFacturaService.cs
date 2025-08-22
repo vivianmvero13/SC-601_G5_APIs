@@ -14,12 +14,10 @@ namespace CafeteriaEspresso.Services
             _context = context;
         }
 
-        //Aca necesitamos el modelo de datos para el almacenamiento temporal
         private readonly List<DetalleFacturaModel> _detalleFactura = new List<DetalleFacturaModel>();
         private int _nextId = 1;
 
 
-        //funcion de obtener DetalleFactura
         public List<DetalleFacturaModel> GetDetalleFacturaModel()
         {
             return _context.G5_Detalle_Factura.ToList();
@@ -75,6 +73,13 @@ namespace CafeteriaEspresso.Services
 
         }
 
+        public List<DetalleFacturaModel> GetByFactura(int idFactura)
+        {
+            return _context.G5_Detalle_Factura
+                           .Where(d => d.id_factura == idFactura)
+                           .OrderBy(d => d.id)
+                           .ToList();
+        }
 
     }
 }

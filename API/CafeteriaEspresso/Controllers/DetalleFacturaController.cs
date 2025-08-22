@@ -1,5 +1,4 @@
-﻿using CafeteriaEspresso.Data;
-using CafeteriaEspresso.Models;
+﻿using CafeteriaEspresso.Models;
 using CafeteriaEspresso.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,6 +26,12 @@ namespace CafeteriaEspresso.Controllers
         public ActionResult<DetalleFacturaModel> GetById(int id)
         {
             return _detalleFacturaService.GetById(id);
+        }
+
+        [HttpGet("Factura/{idFactura:int}")]
+        public ActionResult<IEnumerable<DetalleFacturaModel>> GetByFactura(int idFactura)
+        {
+            return _detalleFacturaService.GetByFactura(idFactura);
         }
 
         //Apis POST
